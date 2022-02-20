@@ -7,4 +7,15 @@ func main() {
 	for i, id := range ids {
 		fmt.Printf("index %d has %d \n", i, id)
 	}
+	sum := 0
+	for _, id := range ids {
+		sum += id
+	}
+	fmt.Println("sum is", sum)
+
+	// Range with maps
+	savedEmails := map[string]string{"Bob": "bob@gmail.com", "Sharon": "sharon@hotmail.fr"}
+	for k, v := range savedEmails {
+		fmt.Println(k, v)
+	}
 }
